@@ -1,0 +1,115 @@
+body{
+
+    background: linear-gradient(135deg,#4facfe,#00f2fe);
+
+    min-height:100vh;
+    
+
+}
+
+.form-card{
+
+    animation:fadeIn 1s ease;
+
+    transition:.4s;
+    background:transparent;
+color:white;
+    
+}
+
+.form-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.form-control{
+
+    transition:.3s;
+    background:transparent;
+}
+
+.form-control:focus{
+
+    box-shadow:0 0 15px dodgerblue;
+
+}
+
+.form-select:focus{
+
+    box-shadow:0 0 15px dodgerblue;
+    background: transparent;
+
+}
+.form-select{
+
+    box-shadow:0 0 15px dodgerblue;
+    background: transparent;
+
+}
+
+.btn{
+
+    transition:.3s;
+
+}
+
+.btn:hover{
+
+    transform:scale(1.05);
+
+}
+
+.shake{
+
+    animation:shake .4s;
+
+}
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes bounce{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-10px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.btn:hover{
+
+    animation:bounce .5s;
+
+}
